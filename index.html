@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary File Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="upload-container">
+    <h2>Upload a Binary File</h2>
+    <input type="file" id="fileInput" accept=".bin" />
+    <button id="uploadButton">Upload</button>
+    <div id="uploadStatus"></div>
+    <button id="sendButton">Send to AVR</button>
+    <script>
+    document.getElementById('sendButton').addEventListener('click', function() {
+        fetch('/send-to-avr')
+        .then(response => response.text())
+        .then(data => alert(data));
+    });
+    </script>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
