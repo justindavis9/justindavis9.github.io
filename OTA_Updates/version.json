@@ -1,5 +1,6 @@
 {
     "version": "1.1.0",
-    "url": "https://justindavis9.github.io/OTA_Updates/firmware.bin"
+    "url": "https://justindavis9.github.io/OTA_Updates/firmware.bin",
+    "fs_version": "1.1.0",
+    "fs_url": "https://justindavis9.github.io/OTA_Updates/littlefs.bin"
 }
-  
